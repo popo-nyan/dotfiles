@@ -16,7 +16,7 @@ alias gc="git commit"
 alias gp="git push"
 alias gr="git rebase"
 alias gl="git log"
-alias wttr="() { curl wttr.in/tokyo }"
+alias wttr="curl wttr.in/tokyo"
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
