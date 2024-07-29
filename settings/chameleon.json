@@ -77,29 +77,6 @@
   "whitelist": {
     "enabledContextMenu": false,
     "defaultProfile": "none",
-    "rules": [
-      {
-        "id": "cdebb2a3-3c5e-487c-97ec-ab4e81d6d968",
-        "name": "discord.com",
-        "sites": [
-          {
-            "domain": "discord.com"
-          }
-        ],
-        "lang": "en-US",
-        "profile": "win4-ff",
-        "spoofIP": "",
-        "options": {
-          "audioContext": true,
-          "clientRects": true,
-          "cssExfil": false,
-          "mediaDevices": false,
-          "name": true,
-          "ref": false,
-          "tz": true,
-          "ws": false
-        }
-      }
-    ]
+    "rules": []
   }
 }
