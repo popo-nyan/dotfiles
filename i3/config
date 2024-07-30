@@ -114,13 +114,13 @@ exec_always --no-startup-id "feh --bg-scale ~/.config/wallpapers/dark-wallpaper.
 
 bindsym $mod+Return exec wezterm
 bindsym --release Print exec "flameshot gui"
-bindsym $mod+Shift+O exec "rofi -modi drun,run -show drun -sidebar-mode -terminal alacritty -theme $HOME/.config/rofi/style.rasi"
+bindsym $mod+Shift+O exec "rofi -modi drun,run,ssh -show drun -sidebar-mode -terminal wezterm -theme $HOME/.config/rofi/style.rasi"
 bindsym XF86AudioRaiseVolume exec "pactl set-sink-volume @DEFAULT_SINK@ +5%"
 bindsym XF86AudioLowerVolume exec  "pactl set-sink-volume @DEFAULT_SINK@ -5%"
 bindsym XF86AudioMute exec "pactl set-sink-mute @DEFAULT_SINK@ toggle"
-bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.playerctld /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
-bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.playerctld /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
-bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.playerctld /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+bindsym XF86AudioPlay exec "playerctl play-pause"
+bindsym XF86AudioPrev exec "playerctl previous"
+bindsym XF86AudioNext exec "playerctl next"
 
 for_window [class="Thunar"] floating enable, resize set 1024 780
 for_window [class="VeraCrypt"] floating enable, resize set 1024 780
