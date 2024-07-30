@@ -17,6 +17,9 @@ alias gp="git push"
 alias gr="git rebase"
 alias gl="git log"
 alias wttr="curl wttr.in/tokyo"
+alias vera="veracrypt"
+alias shr="shred -zxvuf -n 30 -s 30M"
+alias jx="jadx --show-bad-code"
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
