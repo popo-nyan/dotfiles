@@ -30,11 +30,11 @@ client.unfocused        $bg-color           $bg-color          $inactive-text-co
 client.focused_inactive $bg-color           $bg-color          $inactive-text-color #424242
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #424242
 
-gaps top 4
-gaps bottom 4
-gaps right 4
-gaps left 4
-gaps inner 4
+gaps top 10
+gaps bottom 10
+gaps right 10
+gaps left 10
+gaps inner 10
 smart_gaps on
 
 bindsym $mod+Shift+e mode "SYSTEMCTL"
