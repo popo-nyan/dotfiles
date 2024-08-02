@@ -37,8 +37,8 @@ gaps left 4
 gaps inner 4
 smart_gaps on
 
-bindsym $mod+Shift+e mode "SHUTDOWN"
-mode "SHUTDOWN"{
+bindsym $mod+Shift+e mode "SYSTEMCTL"
+mode "SYSTEMCTL"{
     bindsym p exec "systemctl poweroff"
     bindsym r exec "systemctl reboot"
     bindsym Return mode "default"
@@ -114,7 +114,7 @@ exec_always --no-startup-id "feh --bg-scale ~/.config/wallpapers/dark-wallpaper.
 
 bindsym $mod+Return exec wezterm
 bindsym --release Print exec "flameshot gui"
-bindsym $mod+Shift+O exec "rofi -modi drun,run,ssh -show drun -sidebar-mode -terminal wezterm -theme $HOME/.config/rofi/style.rasi"
+bindsym $mod+Shift+O exec "rofi -modi drun -show drun -sidebar-mode -theme $HOME/.config/rofi/style.rasi"
 bindsym XF86AudioRaiseVolume exec "pactl set-sink-volume @DEFAULT_SINK@ +5%"
 bindsym XF86AudioLowerVolume exec  "pactl set-sink-volume @DEFAULT_SINK@ -5%"
 bindsym XF86AudioMute exec "pactl set-sink-mute @DEFAULT_SINK@ toggle"
@@ -123,4 +123,3 @@ bindsym XF86AudioPrev exec "playerctl previous"
 bindsym XF86AudioNext exec "playerctl next"
 
 for_window [class="Thunar"] floating enable, resize set 1024 780
-for_window [class="VeraCrypt"] floating enable, resize set 1024 780
