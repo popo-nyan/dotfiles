@@ -1,0 +1,48 @@
+set scrolloff=10
+set linenumber
+set showmode
+set showcmd
+set visualbell
+set clipboard+=unnamed
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+set surround
+set highlightedyank
+set easymotion
+set notimeout
+
+let mapleader = " "
+imap jj <Esc>
+nnoremap <Esc><Esc> :nohlsearch<CR><ESC>
+inoremap <silent> jj <ESC>
+nnoremap / :action Find<CR>
+nnoremap J :action PreviousTab<CR>
+nnoremap K :action NextTab<CR>
+nnoremap [[ :action MethodUp<CR>
+nnoremap ]] :action MethodDown<CR>
+nnoremap {{ :action GotoNextError<CR>
+nnoremap }} :action GotoPreviousError<CR>
+nnoremap <A-h> <C-w>h
+nnoremap <A-l> <C-w>l
+nnoremap <A-k> <C-w>k
+nnoremap <A-j> <C-w>j
+nnoremap <leader>q :action CloseContent<CR>
+nnoremap <leader>p :action ActivateProjectToolWindow<CR>
+nnoremap <leader>t :action ActivateTerminalToolWindw<CR>
+nnoremap <leader>rr :action RenameElement<CR>
+nnoremap <leader>rm :action ExtractMethod<CR>
+nnoremap <leader>rv :action IntroduceVariable<CR>
+nnoremap <leader>rf :action IntroduceField<CR>
+nnoremap <leader>gd :action GotoDeclaration<CR>
+nnoremap <leader>gy :action GotoTypeDeclaration<CR>
+nnoremap <leader>gi :action GotoImplementation<CR>
+nnoremap <leader>gu :action ShowUsages<CR>
+nnoremap <leader>gt :action GotoTest<CR>
+nnoremap <leader>gf :action Back<CR>
+nnoremap <leader>gb :action Forward<CR>
+nnoremap <leader>wv :action SplitVertically<CR>
+nnoremap <leader>ws :action SplitHorizontally<CR>
+nnoremap <leader>wu :action Unsplit<CR>
+nnoremap <leader>wm :action MoveEditorToOppositeTabGroup<CR>
