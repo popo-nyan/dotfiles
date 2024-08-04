@@ -4,6 +4,7 @@ TYPEWRITTEN_CURSOR="block"
 TYPEWRITTEN_SYMBOL="$"
 TYPEWRITTEN_PROMPT_LAYOUT="singleline_verbose"
 plugins=(git)
+setopt no_beep
 source $ZSH/oh-my-zsh.sh
 
 alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
@@ -18,7 +19,7 @@ alias gr="git rebase"
 alias gl="git log"
 alias wttr="curl wttr.in/tokyo"
 alias vera="veracrypt"
-alias shr="shred -zxvuf -n 30 -s 30M"
+alias shr="shred -zxvuf -n 32 -s 35M"
 alias jx="jadx --show-bad-code"
 
 HISTFILE=~/.zsh_history
