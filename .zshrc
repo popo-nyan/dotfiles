@@ -4,7 +4,9 @@ TYPEWRITTEN_CURSOR="block"
 TYPEWRITTEN_SYMBOL="$"
 TYPEWRITTEN_PROMPT_LAYOUT="singleline_verbose"
 plugins=(git)
+setopt auto_cd
 setopt no_beep
+setopt nolistbeep
 source $ZSH/oh-my-zsh.sh
 
 alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
@@ -16,6 +18,8 @@ alias ga="git add"
 alias gc="git commit"
 alias gp="git push"
 alias gr="git rebase"
+alias gbr="git branch"
+alias gull="git pull"
 alias gl="git log"
 alias wttr="curl wttr.in/tokyo"
 alias vera="veracrypt"
