@@ -20,8 +20,8 @@ inoremap <silent> jj <ESC>
 nnoremap / :action Find<CR>
 nnoremap J :action PreviousTab<CR>
 nnoremap K :action NextTab<CR>
-nnoremap [[ :action MethodUp<CR>
-nnoremap ]] :action MethodDown<CR>
+nnoremap I :action MethodUp<CR>
+nnoremap M :action MethodDown<CR>
 nnoremap {{ :action GotoNextError<CR>
 nnoremap }} :action GotoPreviousError<CR>
 nnoremap <A-h> <C-w>h
@@ -29,6 +29,7 @@ nnoremap <A-l> <C-w>l
 nnoremap <A-k> <C-w>k
 nnoremap <A-j> <C-w>j
 nnoremap <leader>q :action CloseContent<CR>
+nnoremap <leader>x :action HideAllWindows<CR>
 nnoremap <leader>p :action ActivateProjectToolWindow<CR>
 nnoremap <leader>t :action ActivateTerminalToolWindw<CR>
 nnoremap <leader>rr :action RenameElement<CR>
