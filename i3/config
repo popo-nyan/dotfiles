@@ -110,7 +110,7 @@ exec_always --no-startup-id "xset r rate 200 30"
 exec_always --no-startup-id "xmodmap ~/.Xmodmap"
 exec_always --no-startup-id "~/.config/polybar/launch.sh"
 exec_always --no-startup-id "picom -b --config .config/picom/picom.conf"
-exec_always --no-startup-id "feh --bg-scale ~/.config/wallpapers/dark-wallpaper.png"
+exec_always --no-startup-id "feh --bg-fill ~/.config/wallpapers/wallhaven-wqery6.jpg"
 
 bindsym $mod+Return exec wezterm
 bindsym --release Print exec "flameshot gui"
