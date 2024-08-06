@@ -7,6 +7,7 @@ plugins=(git)
 setopt auto_cd
 setopt no_beep
 setopt nolistbeep
+setopt HIST_IGNORE_SPACE
 source $ZSH/oh-my-zsh.sh
 
 alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
@@ -35,3 +36,4 @@ eval "$(pyenv init -)"
 export PYENV_ROOT="$HOME/.pyenv"
 gpgconf --launch gpg-agent
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+eval "$(pyenv virtualenv-init -)"
