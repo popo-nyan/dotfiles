@@ -24,7 +24,7 @@ alias gull="git pull"
 alias gl="git log"
 alias wttr="curl wttr.in/tokyo"
 alias vera="veracrypt"
-alias shr="shred -zxvuf -n 32 -s 50M"
+alias shr="shred -zxvuf --random-source=/dev/urandom -n 32 -s 50M"
 alias jx="jadx --show-bad-code"
 
 HISTFILE=~/.zsh_history
