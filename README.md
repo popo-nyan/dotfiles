@@ -6,4 +6,4 @@ This was created on a 3840x2160, 1080x1920 display.
 - Status Bar: [Polybar](https://github.com/polybar/polybar)
 - Shell: [Zsh](https://www.zsh.org/)
 - Terminal: [wezterm](https://github.com/wez/wezterm)
-
+- IDE: [JetBrains](https://www.jetbrains.com/ides/)
