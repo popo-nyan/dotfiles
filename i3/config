@@ -92,6 +92,7 @@ assign [class="FreeTube"] $media
 assign [class="vlc"] $media
 assign [class="feh"] $media
 assign [class="code"] $coding
+assign [class="osu-lazer"] $game
 
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+c reload
