@@ -1,6 +1,7 @@
 # dotfiles
 
-This was created on a 3840x2160, 1080x1920 display.
+Kanagawa Theme
+**This was created on a 3840x2160, 1080x1920 display.**
 
 - Window Manager: [i3](https://i3wm.org)
 - Status Bar: [Polybar](https://github.com/polybar/polybar)
