@@ -47,3 +47,6 @@ nnoremap <leader>wv :action SplitVertically<CR>
 nnoremap <leader>ws :action SplitHorizontally<CR>
 nnoremap <leader>wu :action Unsplit<CR>
 nnoremap <leader>wm :action MoveEditorToOppositeTabGroup<CR>
+nnoremap <leader>nn :action NewFile<CR>
+nnoremap RR :action SynchronizeCurrentFile<CR>
+nnoremap PP :action ShowIntentionActions<CR>
