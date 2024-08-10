@@ -3,8 +3,8 @@ setopt no_beep
 setopt nolistbeep
 setopt HIST_IGNORE_SPACE
 HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=100
+SAVEHIST=100
 
 ZSH_THEME="typewritten"
 TYPEWRITTEN_CURSOR="block"
@@ -13,6 +13,9 @@ TYPEWRITTEN_PROMPT_LAYOUT="singleline_verbose"
 
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
+
+export LC_ALL=en_US.UTF-8 
+export LANG=en_US.UTF-8
 
 alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 alias l="ls -al"
