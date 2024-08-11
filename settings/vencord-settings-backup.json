@@ -68,10 +68,10 @@
                 "consistent": "image"
             },
             "WebRichPresence (arRPC)": {
-                "enabled": true
+                "enabled": false
             },
             "BANger": {
-                "enabled": true,
+                "enabled": false,
                 "source": "https://i.imgur.com/wp5q52C.mp4"
             },
             "BetterFolders": {
@@ -295,11 +295,12 @@
                 "enabled": false
             },
             "OpenInApp": {
-                "enabled": true,
+                "enabled": false,
                 "spotify": true,
                 "steam": true,
                 "epic": true,
-                "tidal": true
+                "tidal": true,
+                "itunes": true
             },
             "PermissionFreeWill": {
                 "enabled": false
@@ -359,7 +360,7 @@
                 "enabled": false
             },
             "SendTimestamps": {
-                "enabled": true,
+                "enabled": false,
                 "replaceMessageContents": true
             },
             "ServerListIndicators": {
@@ -399,7 +400,7 @@
                 "useSpotifyUris": true
             },
             "SpotifyCrack": {
-                "enabled": true,
+                "enabled": false,
                 "noSpotifyAutoPause": true,
                 "keepSpotifyActivityOnIdle": false
             },
@@ -419,7 +420,7 @@
                 "enabled": false
             },
             "TimeBarAllActivities": {
-                "enabled": true
+                "enabled": false
             },
             "Translate": {
                 "enabled": true,
@@ -453,7 +454,8 @@
             },
             "UserVoiceShow": {
                 "enabled": true,
-                "showInUserProfileModal": true
+                "showInUserProfileModal": true,
+                "showVoiceChannelSectionHeader": true
             },
             "USRBG": {
                 "enabled": false
@@ -514,7 +516,10 @@
                 "guild": true,
                 "everyone": true,
                 "role": true,
-                "showAllChannels": true
+                "showAllChannels": true,
+                "messages": 3,
+                "highlights": true,
+                "events": true
             },
             "PartyMode": {
                 "enabled": false
@@ -620,6 +625,9 @@
             },
             "WebScreenShareFixes": {
                 "enabled": true
+            },
+            "XSOverlay": {
+                "enabled": false
             }
         },
         "notifications": {
@@ -632,7 +640,7 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1722250968257
+            "settingsSyncVersion": 1723349171303
         }
     },
     "quickCss": ""

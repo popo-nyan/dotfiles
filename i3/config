@@ -88,7 +88,6 @@ assign [class="ArmCord"] $communicate
 assign [class="Element"] $communicate
 assign [class="kmail"] $communicate
 assign [class="Spotify"] $media
-assign [class="FreeTube"] $media
 assign [class="vlc"] $media
 assign [class="feh"] $media
 assign [class="code"] $coding
