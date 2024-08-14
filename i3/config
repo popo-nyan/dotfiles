@@ -58,7 +58,7 @@ set $media "4"
 set $analyzing "5"
 set $android "6"
 set $virtual "7"
-set $rss "8"
+set $game "8"
 set $work "9"
 set $coding "10"
 
