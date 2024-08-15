@@ -19,6 +19,7 @@ export LANG=en_US.UTF-8
 
 alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 alias l="ls -al"
+alias cl="clear"
 alias a="cd ../"
 alias aa="cd ../../"
 alias aaa="cd ../../../"
@@ -41,3 +42,6 @@ eval "$(pyenv virtualenv-init -)"
 
 gpgconf --launch gpg-agent
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+
+# Created by `pipx` on 2024-08-11 09:50:29
+export PATH="$PATH:/home/user/.local/bin"
