@@ -19,7 +19,7 @@ export LANG=en_US.UTF-8
 
 alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 alias l="ls -al"
-alias cl="clear"
+alias cls="clear"
 alias a="cd ../"
 alias aa="cd ../../"
 alias aaa="cd ../../../"
