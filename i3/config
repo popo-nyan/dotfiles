@@ -86,7 +86,7 @@ bindsym $mod+Shift+0 move container to workspace number $coding
 
 assign [class="ArmCord"] $communicate
 assign [class="Element"] $communicate
-assign [class="kmail"] $communicate
+assign [class="claws-mail"] $communicate
 assign [class="Spotify"] $media
 assign [class="vlc"] $media
 assign [class="feh"] $media
