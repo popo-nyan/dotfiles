@@ -57,7 +57,7 @@ set $communicate "3"
 set $media "4"
 set $analyzing "5"
 set $android "6"
-set $virtual "7"
+set $:irtual "7"
 set $game "8"
 set $work "9"
 set $coding "10"
@@ -91,6 +91,9 @@ assign [class="Spotify"] $media
 assign [class="vlc"] $media
 assign [class="feh"] $media
 assign [class="code"] $coding
+assign [class="ImHex"] $analyzing
+assign [class="cutter"] $analyzing
+
 
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+c reload
