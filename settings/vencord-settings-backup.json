@@ -605,9 +605,6 @@
             "Summaries": {
                 "enabled": false
             },
-            "ShowAllRoles": {
-                "enabled": false
-            },
             "ShowTimeoutDuration": {
                 "enabled": false
             },
@@ -628,6 +625,9 @@
             },
             "XSOverlay": {
                 "enabled": false
+            },
+            "AlwaysExpandRoles": {
+                "enabled": false
             }
         },
         "notifications": {
@@ -640,7 +640,7 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1723349171303
+            "settingsSyncVersion": 1724922489057
         }
     },
     "quickCss": ""

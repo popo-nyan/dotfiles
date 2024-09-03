@@ -100,7 +100,8 @@ bindsym $mod+Shift+c reload
 
 exec --no-startup-id dunst
 exec --no-startup-id fcitx5
-exec --no-startup-id "/usr/bin/armcord --proxy-server=socks5://jp-tyo-wg-socks5-001.relays.mullvad.net:1080"
+exec --no-startup-id "/usr/bin/armcord --proxy-server=socks5://10.8.0.1:1080"
+exec --no-startup-id "/usr/bin/element-desktop --proxy-server=socks5://10.8.0.1:1080"
 exec --no-startup-id "~/.config/scripts/screenlayout.sh"
 exec_always --no-startup-id "xset r rate 200 30"
 exec_always --no-startup-id "xmodmap ~/.Xmodmap"
