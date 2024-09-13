@@ -36,6 +36,8 @@ alias jx="jadx --show-bad-code"
 
 gpgconf --launch gpg-agent
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+export GPG_TTY="$(tty)"
+gpg-connect-agent updatestartuptty /bye > /dev/null
 
 export PNPM_HOME="/home/user/.local/share/pnpm"
 case ":$PATH:" in
