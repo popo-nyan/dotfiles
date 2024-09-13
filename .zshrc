@@ -31,17 +31,18 @@ alias gbr="git branch"
 alias gull="git pull"
 alias gl="git log"
 alias wttr="curl wttr.in/tokyo"
-alias vera="veracrypt"
-alias shr="shred -zxvuf --random-source=/dev/urandom -n 32 -s 50M"
+alias shr="shred -zxvuf --random-source=/dev/urandom -n 32"
 alias jx="jadx --show-bad-code"
-
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 gpgconf --launch gpg-agent
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 
-# Created by `pipx` on 2024-08-11 09:50:29
-export PATH="$PATH:/home/user/.local/bin"
+export PNPM_HOME="/home/user/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
