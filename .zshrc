@@ -17,7 +17,6 @@ source $ZSH/oh-my-zsh.sh
 export LC_ALL=en_US.UTF-8 
 export LANG=en_US.UTF-8
 
-alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 alias l="ls -al"
 alias cls="clear"
 alias a="cd ../"
