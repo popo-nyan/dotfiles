@@ -1,0 +1,95 @@
+server_names = ['dnscry.pt-hongkong-ipv4', 'pryv8boi', 'cs-bulgaria', 'ksol.io-ns2-dnscrypt-ipv4']
+listen_addresses = [':53']
+max_clients = 250
+
+ipv4_servers = true
+ipv6_servers = false
+
+dnscrypt_servers = true
+doh_servers = false
+odoh_servers = false
+
+require_dnssec = true
+require_nolog = true
+require_nofilter = true
+
+disabled_server_names = ['scaleway', 'google', 'yandex', 'cloudflare', 'cleanbrowsing', 'quad9', 'cisco', 'adguard', 'iij', 'he', 'qihoo360', 'safesurfer', 'dnspod', 'tuna', 'alidns']
+force_tcp = false
+http3 = false
+
+#proxy = 'socks5://10.8.0.1:1080'
+#http_proxy = 'http://127.0.0.1:8888'
+timeout = 5000
+keepalive = 30
+
+log_level = 0
+log_file = '/dev/zero'
+use_syslog = false
+cert_refresh_delay = 30
+
+ignore_system_dns = true
+netprobe_timeout = 60
+
+log_files_max_size = 1
+log_files_max_age = 3
+log_files_max_backups = 1
+
+block_ipv6 = true
+block_unqualified = true
+block_undelegated = true
+reject_ttl = 10
+
+cache = false
+
+[captive_portals]
+
+[query_log]
+
+[nx_log]
+
+[blocked_names]
+
+[blocked_ips]
+
+[allowed_names]
+
+[allowed_ips]
+
+[schedules]
+
+[sources]
+
+  [sources.public-resolvers]
+    urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/public-resolvers.md', 'https://download.dnscrypt.info/resolvers-list/v3/public-resolvers.md']
+    cache_file = '/var/cache/dnscrypt-proxy/public-resolvers.md'
+    minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+    refresh_delay = 72
+    prefix = ''
+
+  [sources.relays]
+    urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/relays.md', 'https://download.dnscrypt.info/resolvers-list/v3/relays.md']
+    cache_file = '/var/cache/dnscrypt-proxy/relays.md'
+    minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+    refresh_delay = 72
+    prefix = ''
+
+
+[broken_implementations]
+fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familyshield-ipv6', 'cleanbrowsing-adult', 'cleanbrowsing-adult-ipv6', 'cleanbrowsing-family', 'cleanbrowsing-family-ipv6', 'cleanbrowsing-security', 'cleanbrowsing-security-ipv6']
+
+[doh_client_x509_auth]
+
+[anonymized_dns]
+
+   routes = [
+    { server_name='dnscry.pt-hongkong-ipv4', via=['anon-cs-serbia', 'anon-dnswarden-swiss']},
+    { server_name='pryv8boi', via=['dnscry.pt-anon-stockholm-ipv4', 'dnscry.pt-anon-mumbai-ipv4']},
+    { server_name='cs-bulgaria', via=['anon-sth-se', 'dnscry.pt-anon-geneva-ipv4']},
+    { server_name='ksol.io-ns2-dnscrypt-ipv4', via=['anon-cs-poland', 'dnscry.pt-anon-singapore02-ipv4']}
+	]
+
+skip_incompatible = false
+
+[dns64]
+
+[static]
