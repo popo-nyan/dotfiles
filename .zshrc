@@ -32,11 +32,7 @@ alias gl="git log"
 alias wttr="curl wttr.in/tokyo"
 alias shr="shred -zxvuf --random-source=/dev/urandom -n 32"
 alias jx="jadx --show-bad-code"
-
-gpgconf --launch gpg-agent
-export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-export GPG_TTY="$(tty)"
-gpg-connect-agent updatestartuptty /bye > /dev/null
+alias mygip="curl https://am.i.mullvad.net/ip"
 
 export PNPM_HOME="/home/user/.local/share/pnpm"
 case ":$PATH:" in
@@ -47,3 +43,8 @@ esac
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
+gpg-connect-agent updatestartuptty /bye > /dev/null
