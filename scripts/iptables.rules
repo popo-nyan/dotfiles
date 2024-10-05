@@ -2,24 +2,14 @@
 -P INPUT DROP
 -P FORWARD DROP
 -P OUTPUT DROP
-
 -A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
-
 -A INPUT -i lo -j ACCEPT
 -A OUTPUT -d 172.16.0.0/12 -j ACCEPT
 -A OUTPUT -d 127.0.0.0/8 -j ACCEPT
 -A OUTPUT -d 192.168.0.0/16 -j ACCEPT
-
-# Mullvad Hong Kong 201, 202
--A OUTPUT -o eth0  -p tcp -m multiport --dport 443 -d 103.125.233.0/24,103.125.233.0/24 -j ACCEPT
--A OUTPUT -o tun0 -j ACCEPT
-
--A OUTPUT -o tun0 -p tcp --dport 53 -j ACCEPT
--A OUTPUT -o tun0 -p tcp --dport 80 -j ACCEPT
--A OUTPUT -o tun0 -p tcp --dport 443 -j ACCEPT
-
--A OUTPUT -o tun0 -p udp --dport 53 -j ACCEPT
--A OUTPUT -o tun0 -p udp --dport 1300:1302 -j ACCEPT
--A OUTPUT -o tun0 -p udp --dport 1194:1197 -j ACCEPT
-
+-A OUTPUT -d 185.242.4.0/24 -o enp+ -p tcp -m multiport --dports 443 -j ACCEPT
+-A OUTPUT -d 193.32.127.0/24 -o enp+ -p tcp -m multiport --dports 443 -j ACCEPT
+-A OUTPUT -d 194.127.199.0/24 -o enp+ -p tcp -m multiport --dports 443 -j ACCEPT
+-A OUTPUT -d 192.138.218.0/24 -o enp+ -p tcp -m multiport --dports 443 -j ACCEPT
+-A OUTPUT -o tun+ -j ACCEPT
 COMMIT

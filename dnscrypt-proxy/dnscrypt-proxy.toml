@@ -1,5 +1,5 @@
 server_names = ['dnscry.pt-hongkong-ipv4', 'pryv8boi', 'cs-bulgaria', 'ksol.io-ns2-dnscrypt-ipv4']
-listen_addresses = [':53']
+listen_addresses = ['127.0.0.1:53']
 max_clients = 250
 
 ipv4_servers = true
@@ -19,7 +19,7 @@ http3 = false
 
 #proxy = 'socks5://10.8.0.1:1080'
 #http_proxy = 'http://127.0.0.1:8888'
-timeout = 5000
+timeout = 15000
 keepalive = 30
 
 log_level = 0

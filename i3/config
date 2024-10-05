@@ -48,7 +48,7 @@ set $communicate "3"
 set $media "4"
 set $analyzing "5"
 set $android "6"
-set $:irtual "7"
+set $virtual "7"
 set $game "8"
 set $work "9"
 set $coding "10"
@@ -98,7 +98,7 @@ exec_always --no-startup-id "feh --bg-fill ~/.config/wallpapers/wallhaven-wqery6
 
 bindsym $mod+Return exec wezterm
 bindsym Print exec "flameshot gui"
-bindsym $mod+Shift+O exec "rofi -modi drun -show drun -sidebar-mode -theme ~/.config/rofi/style.rasi"
+bindsym $mod+Shift+O exec "rofi -modi drun -show drun -sidebar-mode"
 bindsym XF86AudioRaiseVolume exec "pactl set-sink-volume @DEFAULT_SINK@ +5%"
 bindsym XF86AudioLowerVolume exec  "pactl set-sink-volume @DEFAULT_SINK@ -5%"
 bindsym XF86AudioMute exec "pactl set-sink-mute @DEFAULT_SINK@ toggle"
